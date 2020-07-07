@@ -1,0 +1,17 @@
+
+  <div *ngIf="course" class="p-0 m-0">
+    <video  (click)="videoClicked($event)"  class="w-75" controls *ngIf="this.selectedLection">
+      <source [src]="'http://localhost:3000/' + this.selectedLection.video.path" >
+    </video>
+    <app-section-list class="float-right w-25"
+
+                      *ngFor="let section of course.sections"
+                      [section]="section" [selectedLection]="selectedSectionSubj">
+    </app-section-list>
+
+  </div>
+<app-tabbed-view (selectedTab)="onSelectTab($event)">
+  <app-course-card *ngIf="selectedTab == 0"></app-course-card>
+  <app-section *ngIf="selectedTab == 1"></app-section>
+  <app-slider *ngIf="selectedTab == 2"></app-slider>
+</app-tabbed-view>

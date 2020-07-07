@@ -1,0 +1,11 @@
+<div   id="test" class="container border border-dark bg-primary testanimation w-25 d-inline-block m-3" *ngIf="course">
+  <i >{{course.title}}</i>
+  <img [src]="'http://localhost:3000/' + course.image" class="w-100" height="125">
+  <i class="d-block">{{course.description}}</i>
+  <div class="row d-inline">
+    <i class="font-weight-light font-italic d-inline">{{course.price}}</i>
+    <button class="btn-success ml-3" style="width: 40%" (click)="addToShoppingCart()">Into Shoppingcart</button>
+    <button class="btn-info ml-3" style="width: 40%" (click)="openDetails()">Course Details</button>
+  </div>
+</div>
+<app-shopping-cart></app-shopping-cart>

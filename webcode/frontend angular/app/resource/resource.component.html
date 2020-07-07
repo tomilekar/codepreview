@@ -1,0 +1,11 @@
+<form class="form-group" [formGroup]="formGroup">
+  <select *ngIf="resourceType !== 'ResourceType.Video'" formControlName="type" class="form-control" (change)="onChangeType($event)">
+    <option value="" disabled>....Choose your Document Type</option>
+    <option *ngFor="let type of resourceTypes" [value]="type">{{type}}</option>
+  </select>
+  <label for="text">Resources Text</label>
+  <input type="text" id="text" formControlName="text" class="form-control">
+</form>
+<label for="attachment">{{resourceType}}</label>
+<input type="file" id="attachment"(change)="changeResourceFile($event)">
+<button (click)="uploadResource()">Upload Resource</button>

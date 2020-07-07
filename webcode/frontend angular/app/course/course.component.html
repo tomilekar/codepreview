@@ -1,0 +1,23 @@
+<app-shopping-cart></app-shopping-cart>
+<form class="form-group" [formGroup]="formGroup" (ngSubmit)="createCourse()">
+  <label for="title"> Title: </label>
+  <input class="form-control" id="title" type="text" formControlName="title">
+  <label for="image">Image</label>
+  <input class="form-control" id="image" (change)="changeFile($event)" type="file">
+  <label for="category">Category</label>
+  <input formControlName="category" class="form-control" id="category" type="text">
+  <label for="description">Description</label>
+  <input class="form-control" id="description" type="text" formControlName="description">
+  <label for="rating">Rating</label>
+  <input class="form-control" id="rating" type="number" formControlName="rating">
+  <label for="price">Price</label>
+  <input class="form-control" id="price" type="number" formControlName="price">
+  <form class="form-group" formArrayName="sections">
+  <app-section *ngFor="let section of sections; let index = index;" [index]="index"
+               [courseSubject]="subject" [formGroupName]="index" [parentFormGroup]="formGroup" >
+  </app-section>
+</form>
+  <button type="submit" [disabled]="!formGroup.valid">Submit</button>
+</form>
+<button type="submit" (click)="addSection()">Add Section</button>
+

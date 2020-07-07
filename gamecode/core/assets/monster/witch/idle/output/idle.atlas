@@ -1,0 +1,144 @@
+
+idle.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+idle
+  rotate: false
+  xy: 2, 1006
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+idle4
+  rotate: false
+  xy: 2, 492
+  size: 1024, 512
+  orig: 1024, 512
+  offset: 0, 0
+  index: -1
+idle_0
+  rotate: false
+  xy: 1028, 1626
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_1
+  rotate: false
+  xy: 2, 86
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_10
+  rotate: false
+  xy: 878, 2
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_11
+  rotate: false
+  xy: 1316, 2
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_2
+  rotate: false
+  xy: 1028, 1220
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_3
+  rotate: false
+  xy: 1466, 1626
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_4
+  rotate: false
+  xy: 440, 86
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_5
+  rotate: false
+  xy: 1028, 814
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_6
+  rotate: false
+  xy: 1466, 1220
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_7
+  rotate: false
+  xy: 1466, 814
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_8
+  rotate: false
+  xy: 1028, 408
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_9
+  rotate: false
+  xy: 1466, 408
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+
+idle2.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+idle2
+  rotate: false
+  xy: 2, 408
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+idle_12
+  rotate: false
+  xy: 2, 2
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+idle_13
+  rotate: false
+  xy: 1028, 1028
+  size: 436, 404
+  orig: 436, 404
+  offset: 0, 0
+  index: -1
+
+idle3.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+idle3
+  rotate: false
+  xy: 2, 2
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1

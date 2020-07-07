@@ -1,0 +1,13 @@
+<div class="container bg-primary float-left w-75">
+  <div class="row">
+    <div class="col-2 bg-light border border-dark"
+         *ngFor="let tab of tabs; let index = index"
+    (click)="onSelectTab(index)">
+      {{tab}}
+    </div>
+  </div>
+  <div class="row border border-danger">
+    <ng-content></ng-content>
+  </div>
+</div>
+

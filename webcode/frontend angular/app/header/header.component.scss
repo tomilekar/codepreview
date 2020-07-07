@@ -1,0 +1,18 @@
+.header-container {
+  height: 5rem;
+  width: 100%;
+  position: absolute;
+  list-style: none;
+  background-color: azure;
+  border: black dashed;
+  font-size: 12pt;
+}
+
+.header-item {
+  position: relative;
+  margin: auto 0rem;
+  padding: 1.3rem 0.3rem;
+  float: left;
+  list-style: none;
+
+}

@@ -1,0 +1,10 @@
+
+  <div class="bg-primary border border-dark w-100"
+       style="height: 45px; "
+       (click)="onShowLections()">
+    <p>{{section?.title}}</p>
+  </div>
+  <div *ngFor="let lection of section?.lections; let index = index" >
+    <app-lection-section-item (click)="onSelectLection(index)" [lection]="lection" *ngIf="showLections"></app-lection-section-item>
+  </div>
+

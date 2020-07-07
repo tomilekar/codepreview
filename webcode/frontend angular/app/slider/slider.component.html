@@ -1,0 +1,19 @@
+
+
+
+<div class="bg-secondary clearfix p-lg-4" style="width: 100%; height: 350px">
+  <button id="removeProperties" (click)="getPreviouseCard()"
+          style="background-image: url('../../assets/right.svg');
+         width: 2rem; height: 2rem;  transform: rotate(-180deg); float: left"></button>
+  <div style="margin:auto auto; width: 100%" #container>
+    <div *ngFor="let course of sliderCards; let index = index" class="d-inline">
+      <app-course-card [@animate]="true" [course]="course" ></app-course-card>
+    </div>
+  </div>
+  <div>
+    <button id="removeProperties" class="rotated" (click)="getNextCards()"
+            style="background-image: url('../../assets/right.svg');
+         width: 2rem; height: 2rem; display: inline; float: right; "></button>
+
+  </div>
+  </div>

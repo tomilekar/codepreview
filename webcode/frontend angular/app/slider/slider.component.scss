@@ -1,0 +1,24 @@
+#removeProperties {
+  all: initial;
+  * {
+    all: unset;
+  }
+}
+
+.rotated {
+
+  transition: initial;
+  display:inline-block;
+  -webkit-transform: rotate(-90deg);
+}
+@keyframes moveRight {
+  50% { -webkit-transform: translateX(200%)}
+  100% { position: absolute; left: -0px; -webkit-transform: translateX(200%) }
+}
+.moveRight {
+
+  animation-name: moveRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}

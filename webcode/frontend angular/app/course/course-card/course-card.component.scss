@@ -1,0 +1,18 @@
+@keyframes test {
+
+  0%  { background-color: azure;}
+  10% { background-color: black;}
+  30% { width: 10px; transform: rotate(90deg);}
+  80%  { width: 200rem; transform: rotate(-90deg);}
+  90% {transform: scaleY(0.5); }
+  95% {transform: translateX(100%)}
+
+}
+.testanimationxx {
+  animation-name: test;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  animation-iteration-count: 2;
+  animation-fill-mode: backwards;
+  position: relative;
+}

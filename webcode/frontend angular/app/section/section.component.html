@@ -1,0 +1,15 @@
+<div>
+  <form  [formGroup]="formGroup" (ngSubmit)="createSection()">
+    <label for="title"></label>
+    <input type="text" id="title" formControlName="title">
+    <form *ngIf="lections?.length> 0" formArrayName="lections">
+      <app-lection  [sectionSubject]="lectionsSubject" [formGroupName]="index" [parentFormGroup]="formGroup"
+                   *ngFor="let lection of lections;let index = index" [index]="index"></app-lection>
+    </form>
+    <button *ngIf="!parentFormGroup" type="submit" class="btn-success" [disabled]="!formGroup.valid"
+    >Submit</button>
+  </form>
+
+
+</div>
+<button (click)="addLection()" >Add Lection</button>

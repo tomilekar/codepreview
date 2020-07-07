@@ -1,0 +1,7 @@
+<div class="bg-primary w-25" *ngIf="this.cart.length>0">
+  <app-cart-detail *ngFor="let course of cart;" [course]="course"></app-cart-detail>
+</div>
+<hr class="bg-dark"/>
+<i class="font-weight-light font-italic"> {{this.calculatedPrice | currency}}</i>
+<hr class="bg-dark"/>
+

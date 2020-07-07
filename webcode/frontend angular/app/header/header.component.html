@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+
+  <a class="navbar-brand" href="#">TL Productions</a>
+ <div class="position-relative ">
+   <div class="dropdown-menu" #menu>
+     <a class="dropdown-item">Test 1</a>
+     <a class="dropdown-item">Test 2</a>
+     <a class="dropdown-item">Test 3</a>
+   </div>
+   <a class="nav-link dropdown-toggle"
+      (click)="toggleDropDown($event)" [routerLink]="'course'">Courses</a>
+
+
+ </div>
+
+</nav>
